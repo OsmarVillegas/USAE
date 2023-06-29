@@ -1,0 +1,36 @@
+.tabla-Antiguedad {
+    width: 55%;
+    margin: 0 auto;
+  }
+  
+  .tabla-Antiguedad input {
+    width: 45%;
+    text-align-last: center;
+  }
+  
+
+.tabla-Preparacion {
+    width: 75%;
+    margin: 0 auto;
+  }
+
+.tabla-Preparacion input[type="text"] {
+    width: 65%;
+    text-align-last: center;
+  }
+
+.tabla-Cursos {
+    width: 75%;
+}
+
+.tabla-Resumen {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.tabla-Resumen input[type="text"] {
+  width: 30%;
+  text-align-last: center;
+}

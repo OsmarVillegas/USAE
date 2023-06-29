@@ -1,0 +1,382 @@
+<h2 class="text-center" ><strong>Bienvenido administrador</strong></h2>
+<hr>
+<h4 class="text-center mt-4">Edición del formato FCAPS-3</h4>
+
+<!-- Solicitud Datos Generales -->
+<table class="table caption-top center text-center table-responsive mt-4">
+  <tr>
+    <th style="background-color: #000F9F; color: white;">DATOS GENERALES</th>
+  </tr>
+</table>
+<hr>
+
+<div class="row mb-3">
+  <div class="col-md-4">
+    <label for="anio" class="form-label"><strong>Año: &nbsp;</strong></label>
+    <input id="anio" type="text" name="anio">
+  </div>
+  <div class="col-md-4">
+    <label for="periodo" class="form-label"><strong>Periodo evaluado: &nbsp;</strong></label>
+    <input id="periodo" type="text" name="periodo">
+  </div>
+  <div class="col-md-4">
+    <label for="municipio" class="form-label"><strong>Municipio: &nbsp;</strong></label>
+    <input id="municipio" type="text" name="municipio">
+  </div>
+</div>
+
+<div class="row mb-3">
+  <div class="col-md-4">
+    <label for="etapa" class="form-label"><strong>Etapa: &nbsp;</strong></label>
+    <input id="etapa" type="text" name="etapa">
+  </div>
+  <div class="col-md-4">
+    <label for="etapaLetra" class="form-label"><strong>Etapa con letra: &nbsp;</strong></label>
+    <input id="etapaLetra" type="text" name="etapaLetra">
+  </div>  
+</div>
+
+<div class="col-md-5">
+  <label for="municipio" class="form-label"><strong>Fecha límite de entrega: &nbsp;</strong></label>
+  <input id="municipio" type="text" name="municipio" placeholder="27 de enero de 2024">
+</div>
+
+<button class="btn btn-success" (click)="getDatosGenerales()">Enviar información</button>
+
+<!-- INICIO ANTIGÜEDAD EN EL SERVICIO-->
+
+<table class="table caption-top center text-center table-responsive mt-4">
+  <tr>
+    <th style="background-color: #000F9F; color: white;">ANTIGÜEDAD EN EL SERVICIO</th>
+  </tr>
+</table>
+<hr>
+
+<!--Tabla-->
+<div class="tabla-Antiguedad">
+  <table class="table caption-top center text-center table-responsive mt-5 table-bordered">
+    <thead>
+      <tr>
+        <th scope="col" class="col-2">Años</th>
+        <th scope="col" class="col-1">Ponderación</th>
+        <th scope="col" class="col-1">Años</th>
+        <th scope="col" class="col-1">Ponderación</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row"><strong>1</strong></th>
+        <td> <input id="puntajeAnios1" name="puntajeAnios1" [(ngModel)]="puntajeAnios[0]"> </td>
+        <td> <strong>15</strong> </td>
+        <td> <input id="puntajeAnios15" name="puntajeAnios15" [(ngModel)]="puntajeAnios[14]"> </td>
+      </tr>
+      <tr>
+        <th scope="row"><strong>2</strong></th>
+        <td> <input id="puntajeAnios2" name="puntajeAnios2" [(ngModel)]="puntajeAnios[1
+          ]" > </td>
+        <td> <strong>16</strong> </td>
+        <td> <input id="puntajeAnios16" name="puntajeAnios16" [(ngModel)]="puntajeAnios[15]"> </td>
+      </tr>
+      <tr>
+        <th scope="row"><strong>3</strong></th>
+        <td> <input id="puntajeAnios3" name="puntajeAnios3" [(ngModel)]="puntajeAnios[2]" > </td>
+        <td> <strong>17</strong> </td>
+        <td> <input id="puntajeAnios17" name="puntajeAnios17" [(ngModel)]="puntajeAnios[16]" > </td>
+      </tr>
+      <tr>
+        <th scope="row"><strong>4</strong></th>
+        <td> <input id="puntajeAnios4" name="puntajeAnios4" [(ngModel)]="puntajeAnios[3]"> </td>
+        <td> <strong>18</strong> </td>
+        <td> <input id="puntajeAnios18" name="puntajeAnios18" [(ngModel)]="puntajeAnios[17]"> </td>
+      </tr>
+      <tr>
+        <th scope="row"><strong>5</strong></th>
+        <td> <input id="puntajeAnios5" name="puntajeAnios5" [(ngModel)]="puntajeAnios[4]" > </td>
+        <td> <strong>19</strong> </td>
+        <td> <input id="puntajeAnios19" name="puntajeAnios19" [(ngModel)]="puntajeAnios[18]"> </td>
+      </tr>
+      <tr>
+        <th scope="row"><strong>6</strong></th>
+        <td> <input id="puntajeAnios6" name="puntajeAnios6" [(ngModel)]="puntajeAnios[5]"> </td>
+        <td> <strong>20</strong></td>
+        <td> <input id="puntajeAnios20" name="puntajeAnios20" [(ngModel)]="puntajeAnios[19]"> </td>
+      </tr>
+      <tr>
+        <th scope="row"><strong>7</strong></th>
+        <td> <input id="puntajeAnios7" name="puntajeAnios7" [(ngModel)]="puntajeAnios[6]"> </td>
+        <td> <strong>21</strong></td>
+        <td> <input id="puntajeAnios21" name="puntajeAnios21" [(ngModel)]="puntajeAnios[20]"> </td>
+      </tr>
+      <tr>
+        <th scope="row"><strong>8</strong></th>
+        <td> <input id="puntajeAnios8" name="puntajeAnios8" [(ngModel)]="puntajeAnios[7]"> </td>
+        <td> <strong>22</strong></td>
+        <td> <input id="puntajeAnios22" name="puntajeAnios22" [(ngModel)]="puntajeAnios[21]"> </td>
+      </tr>
+      <tr>
+        <th scope="row"><strong>9</strong></th>
+        <td> <input id="puntajeAnios9" name="puntajeAnios9" [(ngModel)]="puntajeAnios[8]"> </td>
+        <td> <strong>23</strong></td>
+        <td> <input id="puntajeAnios23" name="puntajeAnios23" [(ngModel)]="puntajeAnios[22]"> </td>
+      </tr>
+      <tr>
+        <th scope="row"><strong>10</strong></th>
+        <td> <input id="puntajeAnios10" name="puntajeAnios10" [(ngModel)]="puntajeAnios[9]"> </td>
+        <td> <strong>24</strong></td>
+        <td> <input id="puntajeAnios24" name="puntajeAnios24" [(ngModel)]="puntajeAnios[23]"> </td>
+      </tr>
+      <tr>
+        <th scope="row"><strong>11</strong></th>
+        <td> <input id="puntajeAnios11" name="puntajeAnios11" [(ngModel)]="puntajeAnios[10]"> </td>
+        <td> <strong>25</strong></td>
+        <td> <input id="puntajeAnios25" name="puntajeAnios25" [(ngModel)]="puntajeAnios[24]" > </td>
+      </tr>
+      <tr>
+        <th scope="row"><strong>12</strong></th>
+        <td> <input id="puntajeAnios12" name="puntajeAnios12" [(ngModel)]="puntajeAnios[11]"> </td>
+        <td> <strong>26</strong></td>
+        <td> <input id="puntajeAnios26" name="puntajeAnios26" [(ngModel)]="puntajeAnios[25]"> </td>
+      </tr>
+      <tr>
+        <th scope="row"><strong>13</strong></th>
+        <td> <input id="puntajeAnios13" name="puntajeAnios13" [(ngModel)]="puntajeAnios[12]" > </td>
+        <td> <strong>27</strong></td>
+        <td> <input id="puntajeAnios27" name="puntajeAnios27" [(ngModel)]="puntajeAnios[26]"> </td>
+      </tr>
+      <tr>
+        <th scope="row"><strong>14</strong></th>
+        <td> <input id="puntajeAnios14" name="puntajeAnios14" [(ngModel)]="puntajeAnios[13]"> </td>
+        <td> <strong>28</strong></td>
+        <td> <input id="puntajeAnios28" name="puntajeAnios28" [(ngModel)]="puntajeAnios[27]"> </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<br>
+
+<!--
+<div class="row mb-3">
+  <div class="col-md-5">
+    <label for="puntajeAntiguedad" class="form-label"><strong>Puntaje global máximo de sección: &nbsp;</strong></label>
+    <input id="puntajeAntiguedad" type="text" name="puntajeAntiguedad" [(ngModel)]="puntajeAntiguedad" (input)="calcularValorAnio()">
+  </div>
+  <div class="col-md-5">
+    <label for="valorAnio" class="form-label"><strong>Valor que tendrá cada año: &nbsp;</strong></label>
+    <input id="valorAnio" type="text" name="valorAnio" readonly [value]="valorAnio">
+  </div>
+</div>-->
+
+<div class="totalAnios text-center">
+  <label for="totalAnios" type="text" class="form-label"><strong>Puntaje global máximo de sección: &nbsp;</strong></label>
+  <input type="text" name="totalAnios" readonly [(ngModel)]="puntajeAnios[27]" style="width: 8%;">
+</div>
+
+<!-- FINAL ANTIGÜEDAD EN EL SERVICIO -->
+
+<!-- INICIO PREPARACIÓN ACADÉMICA -->
+<table class="table caption-top center text-center table-responsive mt-5">
+  <tr>
+    <th style="background-color: #000F9F; color: white;">PREPARACIÓN ACADÉMICA</th>
+  </tr>
+</table>
+<hr>
+
+<!--Tabla-->
+<div class = "tabla-Preparacion">
+<table class="table caption-top center text-center table-responsive mt-2 table-bordered">
+  <tbody>
+<br>
+<tr>
+  <th scope="row" style="background-color: #B9C8E6;">Nivel</th>
+  <td style="background-color: #B9C8E6;"> <strong> 1 </strong> </td>
+  <td style="background-color: #B9C8E6;"> <strong> 2 </strong> </td>
+  <td style="background-color: #B9C8E6;"> <strong> 3 </strong> </td>
+  <td style="background-color: #B9C8E6;"> <strong> 4 </strong> </td>
+  <td style="background-color: #B9C8E6;"> <strong> 5 </strong> </td>
+  <td style="background-color: #B9C8E6;"> <strong> 6 </strong> </td>
+  <td style="background-color: #B9C8E6;"><strong> Puntaje máximo </strong></td>
+</tr>
+<tr>
+  <th scope="row">Primaria</th>
+  <td> <input type="text" [(ngModel)]="prim1" (input)="calcularTotalPrimaria()"> </td>
+  <td> <input type="text" [(ngModel)]="prim2" (input)="calcularTotalPrimaria()"> </td>
+  <td> <input type="text" [(ngModel)]="prim3" (input)="calcularTotalPrimaria()"> </td>
+  <td> <input type="text" [(ngModel)]="prim4" (input)="calcularTotalPrimaria()"> </td>
+  <td> <input type="text" [(ngModel)]="prim5" (input)="calcularTotalPrimaria()"> </td>
+  <td> <input type="text" [(ngModel)]="prim6" (input)="calcularTotalPrimaria()"> </td>
+  <td style="background-color: #C8C8AA;">
+    <input type="text" [value]="totalPrim" style="background-color: #C8C8AA; border:none;" readonly>
+  </td>
+</tr>
+<tr>
+  <th scope="row">Secundaria</th>
+  <td> <input type="text" [(ngModel)]="sec1" (input)="calcularTotalSecundaria()"> </td>
+  <td> <input type="text" [(ngModel)]="sec2" (input)="calcularTotalSecundaria()"> </td>
+  <td> <input type="text" [(ngModel)]="sec3" (input)="calcularTotalSecundaria()"> </td>
+  <td> </td>
+  <td> </td>
+  <td> </td>
+  <td style="background-color: #C8C8AA;"> <input type="text" [value]="totalSec" style="background-color: #C8C8AA; border:none;" readonly> </td>
+</tr>
+<tr>
+  <th scope="row">Carrera Comercial, Carrera Técnica o Bachillerato </th>
+  <td style="vertical-align: middle;"> <input type="text" [(ngModel)]="bach1" (input)="calcularTotalBachillerato()"> </td>
+  <td style="vertical-align: middle;"> <input type="text" [(ngModel)]="bach2" (input)="calcularTotalBachillerato()"> </td>
+  <td style="vertical-align: middle;"> <input type="text" [(ngModel)]="bach3" (input)="calcularTotalBachillerato()"> </td>
+  <td> </td>
+  <td> </td>
+  <td> </td>
+  <td style="background-color: #C8C8AA; vertical-align: middle;"> <input type="text" [value]="totalBach" style="background-color: #C8C8AA; border:none;" readonly> </td>
+</tr>
+<tr>
+  <th scope="row">Licenciatura</th>
+  <td> <input type="text" [(ngModel)]="lic1" (input)="calcularTotalLicenciatura()"> </td>
+  <td> <input type="text" [(ngModel)]="lic2" (input)="calcularTotalLicenciatura()"> </td>
+  <td> <input type="text" [(ngModel)]="lic3" (input)="calcularTotalLicenciatura()"> </td>
+  <td> <input type="text" [(ngModel)]="lic4" (input)="calcularTotalLicenciatura()" > </td>
+  <td> </td>
+  <td> </td>
+  <td style="background-color: #C8C8AA;"> <input type="text" [value]="totalLic" style="background-color: #C8C8AA; border:none;" readonly ></td>
+</tr>
+</tbody>
+</table>
+</div>
+<br>
+<!--Fin tabla-->
+
+<div class="totalEscuela text-center">
+  <label for="totalEscuela" type="text" class="form-label"><strong>Puntaje global máximo de sección: &nbsp;</strong></label>
+  <input type="text" [value]="totalLic" readonly style="width: 8%;">
+</div>
+
+
+<!-- FINAL PREPARACIÓN ACADÉMICA -->
+
+<!-- INICIO PROGRAMAS DE DESARROLLO (CAPACITACIÓN)-->
+<table class="table caption-top center text-center table-responsive mt-4">
+  <tr>
+    <th style="background-color: #000F9F; color: white;">PROGRAMAS DE DESARROLLO (CAPACITACIÓN)</th>
+  </tr>
+</table>
+<hr>
+<br>
+
+<!--CRUD cursos-->
+
+<div class="container">
+  <div class="row">
+    <div class="col s5">
+      <div class="card-content">
+        <form #cursosForm="ngForm" (ngSubmit)="addCursos(cursosForm)" >
+          <input type="hidden" name="cursosId" #cursosId="ngModel" [(ngModel)]="cursosService.selectedCursos.cursosId">
+          <h5 style="display: flex; flex-direction: column; align-items: center;">Añadir curso</h5>
+          <div class="row mt-4">
+            <div class="input-field">
+              <label for="nombreCurso" class="form-label"><strong>Nombre: &nbsp;</strong></label>
+              <input type="text" name="nombreCurso" #name="ngModel" style="width: 80%;" 
+              [(ngModel)]="cursosService.selectedCursos.nombreCurso"
+              placeholder="Ingresa nombre del curso">
+            </div>
+            <div class="input-field">
+              <label for="puntaje" class="form-label"><strong>Puntaje: &nbsp;</strong></label>
+                <input type="text" name="puntaje" #name="ngModel" 
+                [(ngModel)]="cursosService.selectedCursos.puntaje"
+                placeholder="Ingresa puntaje del curso">
+            </div>
+            <div class="card-action mt-4" style="display: flex; flex-direction: column; align-items: center;">
+              <div class="input-fiel col s12">
+                <button>Guardar </button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="col s7">
+      <h5 style="display: flex; flex-direction: column; align-items: center;">Cursos agregados</h5>
+      <table class="table caption-top center text-center table-responsive table-bordered mt-4">
+        <thead>
+          <th>Nombre</th>
+          <th>Puntaje</th>
+          <th>Operaciones</th>
+        </thead>
+        <tbody>
+          <tr *ngFor="let cursos of cursosService.cursos">
+            <td>{{ cursos.nombreCurso }}</td>
+            <td>{{ cursos.puntaje }}</td>
+            <td>
+                <a (click)="editCursos(cursos)">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+                    <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+                    <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
+                  </svg>
+                </a>&nbsp;&nbsp;&nbsp;&nbsp;
+              <a (click)="deleteCursos(cursos.cursosId)">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
+                  <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6Z"/>
+                  <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1ZM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118ZM2.5 3h11V2h-11v1Z"/>
+                </svg> 
+                </a>
+            </td>            
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<!--Fin CRUD cursos-->
+<div class="totalCursos text-center mt-5">
+  <label for="totalCursos" type="text" class="form-label"><strong>Puntaje global máximo de sección: &nbsp;</strong></label>
+  <input id="totalCursos" type="text" name="totalCursos" [value]="getTotalCursos()" style="width: 8%;" readonly>
+</div>
+
+<!-- FINAL PROGRAMAS DE DESARROLLO (CAPACITACIÓN)-->
+
+<!-- Resumen -->
+
+<table class="table caption-top center text-center table-responsive mt-4">
+  <tr>
+    <th style="background-color: #000F9F; color: white;">RESUMEN</th>
+  </tr>
+</table>
+<hr>
+
+
+<div class="tabla-Resumen">
+  <table class="table caption-top center text-center table-responsive mt-5 table-bordered">
+    <thead>
+      <tr>
+        <th scope="col" class="col-2">Factor</th>
+        <th scope="col" class="col-1">Puntaje</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row"><strong>Desempeño laboral</strong></th>
+        <td> 60 </td>
+      </tr>
+      <tr>
+        <th scope="row"><strong>Antigüedad en el servicio</strong></th>
+        <td> <input type="text" readonly [(ngModel)]="puntajeAnios[27]"> </td>
+      </tr>
+      <tr>
+        <th scope="row"><strong>Preparación académica</strong></th>
+        <td> <input type="text" [value]="totalLic" readonly> </td>
+      </tr>
+      <tr>
+        <th scope="row"><strong>Programas de desarrollo</strong></th>
+        <td> <input type="text" [value]="getTotalCursos()"> </td>
+      </tr>
+      <tr>
+        <th scope="row" style="text-align: right;"><strong>Total: &nbsp;</strong></th>
+        <td> <input type="text"  [value]="+puntajeAnios[27] + +totalLic + +getTotalCursos() ++60"> </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+<div class="d-flex justify-content-center">
+  <button class="btn btn-primary mt-4">Guardar</button>
+</div>

@@ -1,0 +1,112 @@
+.error {
+    font-size: small;
+    margin: 0 0 0 3px;
+    color: rgb(233, 21, 21);
+}
+
+.error2 {
+    font-size: small;
+    margin: 0 0 0 3px;
+    color: rgb(233, 21, 21);
+}
+
+.escondido {
+    display: none;
+}
+
+#botonEstaticoVisualizar {
+    bottom: 0;
+    right: 0;
+    margin: 2em;
+    z-index: 1000;
+    position: fixed;
+}
+
+#botonEstaticoVisualizar button {
+    width: 4em;
+    height: 4em;
+}
+
+#botonEstaticoVisualizar button {
+    border-radius: 5em;
+    background-color: #1473E6;
+    border: 0px;
+    box-shadow: 2px 2px 11px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 2px 2px 11px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 2px 11px 0px rgba(0,0,0,0.75);
+}
+
+#botonEstaticoVisualizar img {
+    filter: invert(100%)
+}
+
+#botonEstaticoVisualizar:hover img {
+    filter: invert(33%) sepia(74%) saturate(1551%) hue-rotate(194deg) brightness(96%) contrast(96%);
+    width: 2.4em;
+    height: auto;
+}
+
+#botonEstaticoVisualizar:hover button {
+    background-color: #FFFF;
+    transition: 0.2s;
+    width: 4.25em;
+    height: 4.25em;
+    margin: -0.1em;
+}
+
+#iconoDocumento {
+    width: 2em;
+    height: auto;
+}
+
+
+#botonEstaticoRegresar {
+    bottom: 0;
+    right: 5em;
+    margin: 2em;
+    z-index: 1000;
+    position: fixed;
+}
+
+#botonEstaticoRegresar button {
+    width: 4em;
+    height: 4em;
+}
+
+#botonEstaticoRegresar button {
+    border-radius: 5em;
+    background-color: #e61414;
+    border: 0px;
+    box-shadow: 2px 2px 11px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 2px 2px 11px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 2px 11px 0px rgba(0,0,0,0.75);
+}
+
+#botonEstaticoRegresar img {
+    filter: invert(100%)
+}
+
+#botonEstaticoRegresar:hover img {
+    filter: invert(18%) sepia(98%) saturate(4568%) hue-rotate(355deg) brightness(93%) contrast(95%);
+    width: 2.4em;
+    height: auto;
+}
+
+#botonEstaticoRegresar:hover button {
+    background-color: #FFFF;
+    transition: 0.2s;
+    width: 4.25em;
+    height: 4.25em;
+    margin: -0.1em;
+}
+
+#iconoRegresar {
+    width: 2em;
+    height: auto;
+}
+
+.pieModal {
+    display: flex;
+    justify-content: flex-end;
+    width: 35%;
+}
